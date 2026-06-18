@@ -1,0 +1,29 @@
+{
+  "project": {
+    "name": "Minh's Personal Portfolio",
+    "version": "0.1.0",
+    "description": "Personal portfolio website showcasing AI research, engineering work, and academic journey",
+    "init_date": "2026-06-19"
+  },
+  "workflow": {
+    "mode": "phased",
+    "granularity": "feature",
+    "parallel_phases": false,
+    "require_agent_review": true,
+    "conventional_commits": true
+  },
+  "tech": {
+    "framework": "Next.js 16",
+    "ui": "Tailwind CSS v4 + shadcn/ui",
+    "language": "TypeScript",
+    "deploy": "GitHub Pages (static export)",
+    "domain": null
+  },
+  "milestones": [
+    "mvp-portfolio",
+    "content-creation",
+    "blog-engine",
+    "research-showcase",
+    "polish-deploy"
+  ]
+}
