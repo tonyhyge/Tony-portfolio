@@ -23,9 +23,9 @@ Plans:
 **Plans:** 4 plans
 
 Plans:
-- [ ] 01.3-01-PLAN.md — HexagonBadge component (decorative hexagon with gradient border/glow)
-- [ ] 01.3-02-PLAN.md — HeroCtas component ("View Projects" + "Contact Me" buttons + "Download CV" link)
-- [ ] 01.3-03-PLAN.md — ScrollIndicator component with fade-on-scroll + CSS bounce-subtle animation
+- [x] 01.3-01-PLAN.md — HexagonBadge component (decorative hexagon with gradient border/glow)
+- [x] 01.3-02-PLAN.md — HeroCtas component ("View Projects" + "Contact Me" buttons + "Download CV" link)
+- [x] 01.3-03-PLAN.md — ScrollIndicator component with fade-on-scroll + CSS bounce-subtle animation
 - [ ] 01.3-04-PLAN.md — Hero composition + page.tsx integration (gradient name, tagline, split layout)
 
 ### Phase 1.4: About & Experience
