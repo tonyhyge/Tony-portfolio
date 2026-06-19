@@ -12,11 +12,12 @@ Plans:
 - [x] 11-03-PLAN.md — TypeScript data files, content directory placeholders
 
 ### Phase 1.2: Navigation & Shell
-- [ ] Sticky header with nav links (Home, About, Experience, Research, Skills, Blog, Contact)
-- [ ] Mobile responsive hamburger menu (sheet component)
-- [ ] Active section tracking via Intersection Observer
-- [ ] Smooth scroll behavior
-- [ ] Footer with social links and copyright
+**Plans:** 3 plans
+
+Plans:
+- [ ] 12-01-PLAN.md — Foundation: nav data, scroll hooks, NavLinks extension, SiteFooter
+- [ ] 12-02-PLAN.md — UI components: LenisProvider, MobileNav, SiteHeader
+- [ ] 12-03-PLAN.md — Layout integration: wire header/footer/Lenis into layout, section placeholders
 
 ### Phase 1.3: Hero Section
 - [ ] Hero layout with intro, title, tagline
