@@ -14,7 +14,8 @@ progress:
 
 # Project State
 
-**Current Phase:** 11
+**Current Phase:** 12
+**Last Activity:** Phase 1.1 complete — 3 plans, 12 files, 21/21 must-haves verified
 **Last Updated:** 2026-06-19
 
 ## Active Milestone
@@ -33,10 +34,11 @@ Milestone 1: mvp-portfolio — Build core portfolio shell with all sections
 - [x] GitHub Actions deploy workflow created & pushed
 - [x] Next.js static export configured for GitHub Pages
 - [x] Phase 1 discussed — CONTEXT.md written with locked decisions
+- [x] Phase 1.1: Project scaffold & design system — 3 plans, 12 files, 21/21 must-haves verified
 
 ## In Progress
 
-- [ ] Phase 1.1: Project scaffold & design system (3 plans ready for execution)
+- [ ] Phase 1.2: Navigation & Shell — header, footer, responsive menu
 
 ## Decisions Log
 
