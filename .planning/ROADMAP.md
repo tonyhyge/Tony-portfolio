@@ -17,14 +17,16 @@ Plans:
 Plans:
 - [x] 12-01-PLAN.md — Foundation: nav data, scroll hooks, NavLinks extension, SiteFooter
 - [x] 12-02-PLAN.md — UI components: LenisProvider, MobileNav, SiteHeader
-- [ ] 12-03-PLAN.md — Layout integration: wire header/footer/Lenis into layout, section placeholders
+- [x] 12-03-PLAN.md — Layout integration: wire header/footer/Lenis into layout, section placeholders
 
 ### Phase 1.3: Hero Section
-- [ ] Hero layout with intro, title, tagline
-- [ ] Animated particle/network background (subtle, performant)
-- [ ] Profile photo placeholder
-- [ ] CTA buttons (View Projects, Contact Me, Download CV placeholder)
-- [ ] Scroll-down indicator
+**Plans:** 4 plans
+
+Plans:
+- [ ] 01.3-01-PLAN.md — HexagonBadge component (decorative hexagon with gradient border/glow)
+- [ ] 01.3-02-PLAN.md — HeroCtas component ("View Projects" + "Contact Me" buttons + "Download CV" link)
+- [ ] 01.3-03-PLAN.md — ScrollIndicator component with fade-on-scroll + CSS bounce-subtle animation
+- [ ] 01.3-04-PLAN.md — Hero composition + page.tsx integration (gradient name, tagline, split layout)
 
 ### Phase 1.4: About & Experience
 - [ ] About section with bio card
@@ -128,6 +130,7 @@ Plans:
 ---
 
 ## Current Focus
-**Milestone 1, Phase 1.2** — Navigation & Shell — building header, footer, responsive mobile menu.
+**Milestone 1, Phase 1.3** — Hero Section — 4 plans: HexagonBadge, HeroCtas, ScrollIndicator, Hero composition.
 <br>
-*Phase 1.1 complete (2026-06-19): 3 plans, 12 files created, 21/21 must-haves verified. See [11-VERIFICATION.md](phases/11-project-scaffold-design-system/11-VERIFICATION.md)*
+*Phase 1.2 complete (2026-06-19): 3 plans, nav/shell/layout integrated.*
+*Phase 1.1 complete (2026-06-19): 3 plans, 12 files created, 21/21 must-haves verified.*
