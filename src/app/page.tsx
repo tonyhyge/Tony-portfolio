@@ -1,13 +1,9 @@
+import { Hero } from "@/components/hero/Hero";
+
 export default function Home() {
   return (
     <>
-      <section
-        id="home"
-        className="min-h-screen flex items-center justify-center"
-        aria-label="Home"
-      >
-        {/* HERO — Phase 1.3 */}
-      </section>
+      <Hero />
 
       <section
         id="about"
