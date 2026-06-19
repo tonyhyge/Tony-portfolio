@@ -1,0 +1,130 @@
+# Roadmap — Personal Portfolio
+
+## Milestone 1: MVP Portfolio (Foundation)
+**Goal:** Functional, responsive portfolio with all core sections and deployable to GitHub Pages
+
+### Phase 1.1: Project Scaffold & Design System
+**Plans:** 3 plans
+
+Plans:
+- [x] 11-01-PLAN.md — Design tokens, fonts, boilerplate cleanup
+- [x] 11-02-PLAN.md — Layout components, theme toggle, navigation shell
+- [x] 11-03-PLAN.md — TypeScript data files, content directory placeholders
+
+### Phase 1.2: Navigation & Shell
+- [ ] Sticky header with nav links (Home, About, Experience, Research, Skills, Blog, Contact)
+- [ ] Mobile responsive hamburger menu (sheet component)
+- [ ] Active section tracking via Intersection Observer
+- [ ] Smooth scroll behavior
+- [ ] Footer with social links and copyright
+
+### Phase 1.3: Hero Section
+- [ ] Hero layout with intro, title, tagline
+- [ ] Animated particle/network background (subtle, performant)
+- [ ] Profile photo placeholder
+- [ ] CTA buttons (View Projects, Contact Me, Download CV placeholder)
+- [ ] Scroll-down indicator
+
+### Phase 1.4: About & Experience
+- [ ] About section with bio card
+- [ ] Experience timeline component
+- [ ] Data structure for experience entries (company, role, dates, description, tech tags)
+- [ ] Populate with AI Engineer and lab research roles
+
+### Phase 1.5: Research Projects
+- [ ] Research project card component
+- [ ] Status badges (in-progress / submitted / published / accepted)
+- [ ] Grid layout with filter by status
+- [ ] Data structure for research entries (abstract, status, tags, links)
+- [ ] Link to paper/PDF placeholder
+
+### Phase 1.6: Skills & Contact
+- [ ] Skills section with categorized tech tags
+- [ ] Contact form component (using Formspree or Netlify Forms)
+- [ ] Social links row (GitHub, LinkedIn, Google Scholar, Email)
+- [ ] International format for form validation
+
+### Phase 1.7: Polish & Deploy
+- [ ] Responsive testing across breakpoints
+- [ ] Performance audit (Lighthouse)
+- [ ] Accessibility check (keyboard nav, screen reader, contrast)
+- [ ] GitHub Actions workflow for static export + deploy to Pages
+- [ ] Custom 404 page
+- [ ] robots.txt and sitemap placeholder
+- [ ] Go live
+
+---
+
+## Milestone 2: Blog Engine
+**Goal:** Full blog system with markdown posts, tagging, and RSS
+
+### Phase 2.1: Blog Infrastructure
+- [ ] MDX integration (next-mdx-remote)
+- [ ] Blog post data schema (frontmatter: title, date, tags, excerpt, cover)
+- [ ] Blog directory structure (/content/blog/*.mdx)
+- [ ] Syntax highlighting for code blocks
+- [ ] Reading time estimation
+
+### Phase 2.2: Blog UI
+- [ ] Blog list page (cards with title, date, excerpt, tags)
+- [ ] Individual post page with MDX rendering
+- [ ] Tag filter / category pages
+- [ ] Previous/Next post navigation
+- [ ] Table of contents for long posts
+
+### Phase 2.3: Blog Features
+- [ ] RSS feed generation
+- [ ] SEO per post (meta tags, Open Graph)
+- [ ] Share buttons
+- [ ] Blog archive / pagination
+
+---
+
+## Milestone 3: Research Lab Deep-Dive
+**Goal:** Enhanced research section with lab context, publication tracking, and visual appeal
+
+### Phase 3.1: Lab Profile
+- [ ] Lab overview page
+- [ ] Research areas and focus description
+- [ ] Collaborator mentions
+- [ ] Timeline of research journey
+
+### Phase 3.2: Publication List
+- [ ] Enhanced publication cards with citation info
+- [ ] Links to arXiv, DOI, PDF
+- [ ] Publication year filter
+- [ ] "Latest publication" highlight
+
+### Phase 3.3: Project Demonstrations
+- [ ] Interactive demos for select ML projects
+- [ ] Embeddable models/visualizations
+- [ ] Code repository links
+
+---
+
+## Milestone 4: Polish & Advanced Features
+**Goal:** Premium feel, performance optimization, internationalization
+
+### Phase 4.1: Animations & Interactions
+- [ ] Scroll-triggered animations (fade, slide-up for sections)
+- [ ] Page transition animations
+- [ ] 3D/WebGL elements (Three.js for hero or background)
+- [ ] Hover effects on cards and links
+
+### Phase 4.2: Performance & SEO
+- [ ] Image optimization pipeline
+- [ ] Lazy loading for below-fold content
+- [ ] Structured data (JSON-LD Person, CreativeWork)
+- [ ] Google Analytics or Plausible integration
+- [ ] Lighthouse score optimization
+
+### Phase 4.3: i18n (Future)
+- [ ] Vietnamese/English bilingual support
+- [ ] Locale detection and switcher
+- [ ] Translated content management
+- [ ] Localized SEO tags
+
+---
+
+## Current Focus
+**Milestone 1, Phase 1.1** — Setting up the scaffold and design system.
