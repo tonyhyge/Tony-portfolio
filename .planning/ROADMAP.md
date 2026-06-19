@@ -127,4 +127,6 @@ Plans:
 ---
 
 ## Current Focus
-**Milestone 1, Phase 1.1** — Setting up the scaffold and design system.
+**Milestone 1, Phase 1.2** — Navigation & Shell — building header, footer, responsive mobile menu.
+<br>
+*Phase 1.1 complete (2026-06-19): 3 plans, 12 files created, 21/21 must-haves verified. See [11-VERIFICATION.md](phases/11-project-scaffold-design-system/11-VERIFICATION.md)*
