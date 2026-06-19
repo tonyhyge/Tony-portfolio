@@ -15,8 +15,8 @@ Plans:
 **Plans:** 3 plans
 
 Plans:
-- [ ] 12-01-PLAN.md — Foundation: nav data, scroll hooks, NavLinks extension, SiteFooter
-- [ ] 12-02-PLAN.md — UI components: LenisProvider, MobileNav, SiteHeader
+- [x] 12-01-PLAN.md — Foundation: nav data, scroll hooks, NavLinks extension, SiteFooter
+- [x] 12-02-PLAN.md — UI components: LenisProvider, MobileNav, SiteHeader
 - [ ] 12-03-PLAN.md — Layout integration: wire header/footer/Lenis into layout, section placeholders
 
 ### Phase 1.3: Hero Section
