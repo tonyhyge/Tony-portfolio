@@ -1,25 +1,20 @@
 import { Hero } from "@/components/hero/Hero";
+import { Section } from "@/components/section";
+import { AboutContent } from "@/components/about/about-content";
+import { ExperienceTimeline } from "@/components/experience/experience-timeline";
 
 export default function Home() {
   return (
     <>
       <Hero />
 
-      <section
-        id="about"
-        className="min-h-screen"
-        aria-label="About"
-      >
-        {/* ABOUT — Phase 1.4 */}
-      </section>
+      <Section id="about" title="About">
+        <AboutContent />
+      </Section>
 
-      <section
-        id="experience"
-        className="min-h-screen"
-        aria-label="Experience"
-      >
-        {/* EXPERIENCE — Phase 1.4 */}
-      </section>
+      <Section id="experience" title="Experience">
+        <ExperienceTimeline />
+      </Section>
 
       <section
         id="skills"
