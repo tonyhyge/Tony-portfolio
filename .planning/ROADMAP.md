@@ -29,10 +29,12 @@ Plans:
 - [x] 01.3-04-PLAN.md — Hero composition + page.tsx integration (gradient name, tagline, split layout)
 
 ### Phase 1.4: About & Experience
-- [ ] About section with bio card
-- [ ] Experience timeline component
-- [ ] Data structure for experience entries (company, role, dates, description, tech tags)
-- [ ] Populate with AI Engineer and lab research roles
+**Plans:** 3 plans
+
+Plans:
+- [ ] 01.4-01-PLAN.md — Data model update + About section components (narrative, stats, composition)
+- [ ] 01.4-02-PLAN.md — Experience timeline (entry component, timeline container, date formatting)
+- [ ] 01.4-03-PLAN.md — Page integration (wire About and Experience sections into page.tsx)
 
 ### Phase 1.5: Research Projects
 - [ ] Research project card component
@@ -130,7 +132,8 @@ Plans:
 ---
 
 ## Current Focus
-**Milestone 1, Phase 1.3** — Hero Section — 4 plans: HexagonBadge, HeroCtas, ScrollIndicator, Hero composition.
+**Milestone 1, Phase 1.4** — About & Experience — 3 plans: data model + About components, Experience timeline, page integration.
 <br>
+*Phase 1.3 complete (2026-06-19): 4 plans, Hero composition, HexagonBadge, Ctas, ScrollIndicator.*
 *Phase 1.2 complete (2026-06-19): 3 plans, nav/shell/layout integrated.*
 *Phase 1.1 complete (2026-06-19): 3 plans, 12 files created, 21/21 must-haves verified.*
