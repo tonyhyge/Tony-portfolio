@@ -73,13 +73,15 @@ Plans:
 
 ### Phase 1.7: Polish & Deploy
 
-- [ ] Responsive testing across breakpoints
-- [ ] Performance audit (Lighthouse)
-- [ ] Accessibility check (keyboard nav, screen reader, contrast)
-- [ ] GitHub Actions workflow for static export + deploy to Pages
-- [ ] Custom 404 page
-- [ ] robots.txt and sitemap placeholder
-- [ ] Go live
+**Plans:** 6 plans
+
+Plans:
+- [ ] 01.7-01-PLAN.md — Install test dependencies + create Vitest/Playwright/Lighthouse CI configs
+- [ ] 01.7-02-PLAN.md — Custom 404 page, AI-crawler robots.txt, dynamic sitemap
+- [ ] 01.7-03-PLAN.md — Unit tests (cn()) + component tests (Button, Badge) + fixtures
+- [ ] 01.7-04-PLAN.md — E2E tests (nav, sections, dark mode, 404) + responsive screenshots + a11y audit
+- [ ] 01.7-05-PLAN.md — CI pipeline: test gate + audit gate (Lighthouse >= 90, a11y)
+- [ ] 01.7-06-PLAN.md — First production deploy + Formspree pre-flight verification
 
 ---
 
@@ -168,8 +170,11 @@ Plans:
 
 ## Current Focus
 
-**Milestone 1, Phase 1.4** — About & Experience — 3 plans: data model + About components, Experience timeline, page integration.
+**Milestone 1, Phase 1.7** — Polish & Deploy — 6 plans: testing infra, 404/robots/sitemap, unit/component tests, E2E/a11y tests, CI gates, production deploy.
 <br>
+*Phase 1.6 complete (2026-06-21): 3 plans, Skills accordion, Contact form, Formspree integration.*
+*Phase 1.5 complete (2026-06-21): 3 plans, Research grid, filter tabs, badge variants.*
+*Phase 1.4 complete (2026-06-21): 5 plans, About narrative, Experience timeline, dual-track roles.*
 *Phase 1.3 complete (2026-06-19): 4 plans, Hero composition, HexagonBadge, Ctas, ScrollIndicator.*
 *Phase 1.2 complete (2026-06-19): 3 plans, nav/shell/layout integrated.*
 *Phase 1.1 complete (2026-06-19): 3 plans, 12 files created, 21/21 must-haves verified.*

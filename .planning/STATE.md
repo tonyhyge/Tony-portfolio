@@ -4,8 +4,8 @@ milestone: v1.0
 milestone_name: milestone
 current_phase: 1.7 — Polish & Deploy
 status: Ready to plan
-stopped_at: Phase 01.7 context gathered
-last_updated: "2026-06-21T09:15:44.155Z"
+stopped_at: Phase 1.7 UI-SPEC approved
+last_updated: "2026-06-21T10:00:44.562Z"
 last_activity: 2026-06-21
 progress:
   total_phases: 16
@@ -38,20 +38,19 @@ Milestone 1: mvp-portfolio — Build core portfolio shell with all sections
 - [x] Next.js static export configured for GitHub Pages
 - [x] Phase 1 discussed — CONTEXT.md written with locked decisions
 - [x] Phase 1.1: Project scaffold & design system — 3 plans, 12 files, 21/21 must-haves verified
+- [x] Phase 1.2: Navigation & Shell — header, footer, responsive menu
+- [x] Phase 1.3: Hero Section — 4 plans, Hero composition, HexagonBadge, Ctas, ScrollIndicator
+- [x] Phase 1.4: About & Experience — 5 plans, dual-track timeline, narrative
+- [x] Phase 1.5: Research Projects — 3 plans, Research grid, filter tabs, badge variants
+- [x] Phase 1.6: Skills & Contact — 3 plans, Skills accordion, Contact form, Formspree integration
 
 ## In Progress
 
-- [x] Phase 1.2: Navigation & Shell — header, footer, responsive menu
-- [x] Phase 1.4: About & Experience — section content complete
-- [x] Phase 1.5: Research Projects — 3 plans, 7 files, 3 waves
-
-### Planned
-
-- [ ] Phase 1.6: Skills & Contact — 3 plans (foundation, skills UI, contact UI + integration)
+- [ ] Phase 1.7: Polish & Deploy — 6 plans (testing infra, 404/robots/sitemap, tests, CI gates, deploy)
 
 ### Ready for Planning
 
-- [ ] Phase 1.3: Hero Section — context gathered
+- [ ] Phase 2.1: Blog Infrastructure — MDX integration, blog schema, content structure
 
 ## Decisions Log
 
@@ -64,6 +63,6 @@ Milestone 1: mvp-portfolio — Build core portfolio shell with all sections
 
 ## Session
 
-**Last session:** 2026-06-21T09:15:44.148Z
-**Stopped at:** Phase 01.7 context gathered
-**Resume file:** .planning/phases/01.7-polish-deploy/01.7-CONTEXT.md
+**Last session:** 2026-06-21T10:00:44.554Z
+**Stopped at:** Phase 1.7 UI-SPEC approved
+**Resume file:** .planning/phases/01.7-polish-deploy/01.7-UI-SPEC.md
