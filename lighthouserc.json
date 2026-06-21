@@ -1,12 +1,14 @@
 {
   "ci": {
     "collect": {
-      "staticDistDir": "./out",
-      "url": ["http://localhost/Tony-portfolio/"],
+      "startServerCommand": "node tests/serve-out.mjs",
+      "url": ["http://localhost:3000/Tony-portfolio/"],
       "numberOfRuns": 3,
       "settings": {
         "skipAudits": ["pwa-*"],
-        "preset": "desktop"
+        "preset": "desktop",
+        "hostname": "localhost",
+        "port": 3000
       }
     },
     "assert": {
