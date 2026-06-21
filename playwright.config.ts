@@ -1,6 +1,6 @@
 import { defineConfig } from "@playwright/test";
 
-const BASE_URL = "http://localhost:3000";
+const BASE_URL = "http://localhost:3800";
 
 export default defineConfig({
   testDir: "./tests/e2e",

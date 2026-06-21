@@ -8,7 +8,8 @@ import { fileURLToPath } from "node:url";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const OUT = path.resolve(__dirname, "../out");
-const PORT = 3000;
+// Use PORT env var or default (non-3000 to avoid LHCI Chrome port collision)
+const PORT = parseInt(process.env.PORT || "3800", 10);
 const BASE = "/Tony-portfolio";
 
 const MIME = {

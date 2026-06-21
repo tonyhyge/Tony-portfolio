@@ -2,13 +2,13 @@
   "ci": {
     "collect": {
       "startServerCommand": "node tests/serve-out.mjs",
-      "url": ["http://localhost:3000/Tony-portfolio/"],
+      "url": ["http://localhost:3800/Tony-portfolio/"],
       "numberOfRuns": 3,
       "settings": {
         "skipAudits": ["pwa-*"],
         "preset": "desktop",
         "hostname": "localhost",
-        "port": 3000
+        "port": 3800
       }
     },
     "assert": {
