@@ -21,7 +21,7 @@ export function SiteHeader() {
     <div
       className={cn(
         "fixed top-0 left-0 right-0 z-40 transition-transform duration-200 ease-in-out",
-        isVisible ? "translate-y-0" : "-translate-y-full",
+        isVisible ? "translate-y-0" : "-translate-y-full max-md:translate-y-0",
       )}
     >
       <StickyHeader

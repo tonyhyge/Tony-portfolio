@@ -55,15 +55,16 @@ function ResearchGridInner({ projects }: ResearchGridInnerProps) {
       else params.set("status", status)
 
       // Allow exit transition to play before navigating
+      // scroll: false prevents page jump to top on filter change
       setTimeout(() => {
-        router.push(pathname + "?" + params.toString())
+        router.replace(pathname + "?" + params.toString(), { scroll: false })
       }, 150)
     },
     [router, pathname, searchParams],
   )
 
   const handleShowAll = useCallback(() => {
-    router.push(pathname)
+    router.replace(pathname, { scroll: false })
   }, [router, pathname])
 
   // Track status changes so the effect can detect when navigation completed
@@ -93,7 +94,7 @@ function ResearchGridInner({ projects }: ResearchGridInnerProps) {
 
       <div
         className={cn(
-          "grid grid-cols-1 gap-6 md:grid-cols-2",
+          "grid grid-cols-1 gap-6 md:grid-cols-2 min-h-[300px]",
           isTransitioning
             ? "opacity-0 transition-all duration-150 ease-out"
             : "opacity-100 transition-all duration-200 ease-out",
