@@ -10,7 +10,8 @@
     "granularity": "feature",
     "parallel_phases": false,
     "require_agent_review": true,
-    "conventional_commits": true
+    "conventional_commits": true,
+    "_auto_chain_active": false
   },
   "tech": {
     "framework": "Next.js 16",

@@ -1,8 +1,7 @@
 "use client"
 
-import { useEffect, useRef, useState, useCallback } from "react"
+import { useEffect, useState, useCallback } from "react"
 import { useClickOutside } from "@/hooks/useClickOutside"
-import { cn } from "@/lib/utils"
 
 interface SkillPopoverProps {
   projects: { slug: string; title: string }[]
@@ -18,9 +17,7 @@ export function SkillPopover({
   isOpen,
 }: SkillPopoverProps) {
   const popoverRef = useClickOutside<HTMLDivElement>(onClose)
-  const containerRef = useRef<HTMLDivElement>(null)
   const [position, setPosition] = useState({ top: 0, left: 0 })
-  const [visible, setVisible] = useState(false)
 
   const handleKeyDown = useCallback(
     (e: KeyboardEvent) => {
@@ -32,11 +29,6 @@ export function SkillPopover({
   )
 
   useEffect(() => {
-    if (!isOpen) {
-      setVisible(false)
-      return
-    }
-
     // Position the popover relative to the trigger element
     const trigger = triggerRef.current
     if (trigger) {
@@ -46,9 +38,6 @@ export function SkillPopover({
         left: rect.left,
       })
     }
-
-    // Trigger fade-in after position is set
-    requestAnimationFrame(() => setVisible(true))
 
     document.addEventListener("keydown", handleKeyDown)
     return () => {
@@ -63,11 +52,7 @@ export function SkillPopover({
       ref={popoverRef}
       role="dialog"
       aria-label="Related projects"
-      className={cn(
-        "fixed z-50 min-w-[200px] max-w-[280px] rounded-lg border border-border bg-popover p-3 shadow-md",
-        "transition-opacity duration-150",
-        visible ? "opacity-100" : "opacity-0"
-      )}
+      className="fixed z-50 min-w-[200px] max-w-[280px] rounded-lg border border-border bg-popover p-3 shadow-md"
       style={{ top: position.top, left: position.left }}
     >
       <p className="text-xs text-muted-foreground mb-1.5">Related projects</p>

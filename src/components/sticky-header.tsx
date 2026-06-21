@@ -1,6 +1,8 @@
 import { cn } from "@/lib/utils";
 
-interface StickyHeaderProps extends React.ComponentProps<"header"> {}
+interface StickyHeaderProps extends React.ComponentProps<"header"> {
+  children?: React.ReactNode;
+}
 
 export function StickyHeader({ className, children, ...props }: StickyHeaderProps) {
   return (

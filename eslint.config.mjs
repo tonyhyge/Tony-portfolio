@@ -12,6 +12,9 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    // Pre-existing projects — not part of this portfolio build
+    "ui-ux-pro-max-skill/**",
+    "coverage/**",
   ]),
 ]);
 

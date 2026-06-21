@@ -56,7 +56,7 @@ export function ContactForm() {
           type="text"
           name="name"
           required
-          aria-invalid={!!state.errors.find(e => e.field === "name")}
+          aria-invalid={!!state.errors && state.errors.getFieldErrors("name").length > 0}
           className={cn(
             "w-full rounded-lg border border-border bg-background px-3 py-2 text-foreground",
             "outline-none transition-colors",
@@ -83,7 +83,7 @@ export function ContactForm() {
           type="email"
           name="email"
           required
-          aria-invalid={!!state.errors.find(e => e.field === "email")}
+          aria-invalid={!!state.errors && state.errors.getFieldErrors("email").length > 0}
           className={cn(
             "w-full rounded-lg border border-border bg-background px-3 py-2 text-foreground",
             "outline-none transition-colors",
@@ -110,7 +110,7 @@ export function ContactForm() {
           name="message"
           required
           rows={5}
-          aria-invalid={!!state.errors.find(e => e.field === "message")}
+          aria-invalid={!!state.errors && state.errors.getFieldErrors("message").length > 0}
           className={cn(
             "w-full resize-none rounded-lg border border-border bg-background px-3 py-2 text-foreground",
             "outline-none transition-colors",
@@ -144,10 +144,10 @@ export function ContactForm() {
       </Button>
 
       {/* Form-level errors from Formspree */}
-      {state.errors.length > 0 && state.errors.some(e => !e.field) && (
+      {state.errors && state.errors.getFormErrors().length > 0 && (
         <div className="rounded-lg border border-destructive/30 bg-destructive/5 p-3 text-sm text-destructive">
           {state.errors
-            .filter(e => !e.field)
+            .getFormErrors()
             .map((e, i) => (
               <p key={i}>{e.message}</p>
             ))}

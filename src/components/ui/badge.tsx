@@ -22,13 +22,13 @@ const badgeVariants = cva(
       },
       statusColor: {
         "in-progress":
-          "bg-[oklch(0.72_0.15_72/0.15)] text-[oklch(0.72_0.15_72)] dark:bg-[oklch(0.72_0.12_72/0.2)] dark:text-[oklch(0.72_0.12_72)]",
+          "bg-[oklch(0.72_0.15_72/0.15)] text-[oklch(0.5_0.15_72)] dark:bg-[oklch(0.72_0.12_72/0.2)] dark:text-[oklch(0.82_0.14_72)]",
         submitted:
-          "bg-[oklch(0.55_0.14_250/0.15)] text-[oklch(0.55_0.14_250)] dark:bg-[oklch(0.6_0.12_250/0.2)] dark:text-[oklch(0.6_0.12_250)]",
+          "bg-[oklch(0.55_0.14_250/0.15)] text-[oklch(0.38_0.14_250)] dark:bg-[oklch(0.6_0.12_250/0.2)] dark:text-[oklch(0.78_0.12_250)]",
         published:
-          "bg-[oklch(0.58_0.17_145/0.15)] text-[oklch(0.58_0.17_145)] dark:bg-[oklch(0.62_0.14_145/0.2)] dark:text-[oklch(0.62_0.14_145)]",
+          "bg-[oklch(0.58_0.17_145/0.15)] text-[oklch(0.38_0.17_145)] dark:bg-[oklch(0.62_0.14_145/0.2)] dark:text-[oklch(0.78_0.14_145)]",
         accepted:
-          "bg-[oklch(0.52_0.16_290/0.15)] text-[oklch(0.52_0.16_290)] dark:bg-[oklch(0.58_0.14_290/0.2)] dark:text-[oklch(0.58_0.14_290)]",
+          "bg-[oklch(0.52_0.16_290/0.15)] text-[oklch(0.38_0.16_290)] dark:bg-[oklch(0.58_0.14_290/0.2)] dark:text-[oklch(0.78_0.14_290)]",
       },
       skillColor: {
         cyan: "bg-[oklch(0.78_0.12_200/0.12)] text-[oklch(0.55_0.15_200)] dark:bg-[oklch(0.78_0.12_200/0.18)] dark:text-[oklch(0.72_0.14_200)]",

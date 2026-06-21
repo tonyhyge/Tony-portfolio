@@ -8,6 +8,9 @@ export interface Experience {
   highlights: string[];
   techTags: string[];
   companyUrl?: string;
+  // NEW — concurrent role support per D-11
+  track?: "industry" | "research";
+  groupId?: string;
 }
 
 export const experiences: Experience[] = [
@@ -34,6 +37,32 @@ export const experiences: Experience[] = [
       "Docker",
     ],
     companyUrl: "https://ailogy.com",
+    track: "industry",
+    groupId: "concurrent-1",
+  },
+  {
+    role: "Research Assistant",
+    company: "AILOGY",
+    location: "Hanoi, Vietnam",
+    startDate: "2024-07",
+    endDate: "Present",
+    description:
+      "Conducting research on efficient transformer architectures and low-resource language understanding alongside production engineering work.",
+    highlights: [
+      "Investigating sparse attention mechanisms for long-context LLMs",
+      "Building evaluation benchmarks for Vietnamese natural language understanding",
+      "Collaborating on cross-lingual transfer learning research",
+    ],
+    techTags: [
+      "Python",
+      "PyTorch",
+      "Transformers",
+      "NLP",
+      "Vietnamese NLP",
+      "Attention Mechanisms",
+    ],
+    track: "research",
+    groupId: "concurrent-1",
   },
   {
     role: "Research Intern",

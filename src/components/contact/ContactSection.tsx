@@ -1,6 +1,6 @@
 "use client"
 
-import { useEffect, useRef, useState, useCallback } from "react"
+import { useEffect, useRef, useState } from "react"
 import { Mail } from "lucide-react"
 import { ContactForm } from "./ContactForm"
 import { SocialLinks } from "./SocialLinks"
@@ -14,7 +14,6 @@ export function ContactSection() {
     const el = sectionRef.current
     if (!el) return
 
-    const prefersReduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
@@ -24,12 +23,7 @@ export function ContactSection() {
       },
       { threshold: 0.1 }
     )
-
-    if (prefersReduced) {
-      setIsVisible(true)
-    } else {
-      observer.observe(el)
-    }
+    observer.observe(el)
 
     return () => observer.disconnect()
   }, [])

@@ -3,7 +3,6 @@
 import { useState } from "react";
 import Link from "next/link";
 import { Menu } from "lucide-react";
-import { Button } from "@/components/ui/button";
 import {
   Sheet,
   SheetTrigger,
@@ -17,10 +16,10 @@ export function MobileNav() {
 
   return (
     <Sheet open={open} onOpenChange={setOpen}>
-      <SheetTrigger>
-        <Button variant="ghost" size="icon" aria-label="Toggle mobile menu" className="lg:hidden">
+      <SheetTrigger aria-label="Toggle mobile menu">
+        <div className="inline-flex items-center justify-center rounded-lg border border-transparent bg-clip-padding text-sm font-medium whitespace-nowrap transition-all outline-none select-none size-8 lg:hidden">
           <Menu className="size-5" />
-        </Button>
+        </div>
       </SheetTrigger>
       <SheetContent side="right" showCloseButton={false}>
         <div className="flex flex-col gap-1 p-4 pt-12">

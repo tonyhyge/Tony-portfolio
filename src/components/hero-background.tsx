@@ -1,6 +1,6 @@
 import { cn } from "@/lib/utils";
 
-interface HeroBackgroundProps extends React.ComponentProps<"div"> {}
+type HeroBackgroundProps = React.ComponentProps<"div">
 
 export function HeroBackground({ className, ...props }: HeroBackgroundProps) {
   return (
