@@ -3,6 +3,8 @@ import { Section } from "@/components/section";
 import { AboutContent } from "@/components/about/about-content";
 import { ExperienceTimeline } from "@/components/experience/experience-timeline";
 import { ResearchGrid } from "@/components/research/ResearchGrid";
+import { SkillsSection } from "@/components/skills/SkillsSection";
+import { ContactSection } from "@/components/contact/ContactSection";
 
 export default function Home() {
   return (
@@ -25,21 +27,9 @@ export default function Home() {
         <ResearchGrid />
       </Section>
 
-      <section
-        id="skills"
-        className="min-h-screen"
-        aria-label="Skills"
-      >
-        {/* SKILLS — Phase 1.6 */}
-      </section>
+      <SkillsSection />
 
-      <section
-        id="contact"
-        className="min-h-screen"
-        aria-label="Contact"
-      >
-        {/* CONTACT — Phase 1.6 */}
-      </section>
+      <ContactSection />
     </>
   );
 }
