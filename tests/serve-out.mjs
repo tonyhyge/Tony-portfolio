@@ -60,4 +60,5 @@ http
   })
   .listen(PORT, () => {
     console.log(`Serving ./out via basePath rewrite at :${PORT}${BASE}/`);
+    console.log(`listening on :${PORT}`);
   });
