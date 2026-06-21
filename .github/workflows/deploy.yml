@@ -70,7 +70,7 @@ jobs:
       - run: npm ci
 
       - name: Run Lighthouse CI
-        run: npx lhci autorun --staticDistDir=./out
+        run: npx lhci autorun
         env:
           LHCI_GITHUB_APP_TOKEN: ${{ secrets.LHCI_GITHUB_APP_TOKEN }}
 
