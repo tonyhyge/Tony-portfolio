@@ -37,22 +37,25 @@ Plans:
 
 ### Phase 1.4: About & Experience
 
-**Plans:** 3/3 plans complete
+**Plans:** 5 plans (3 original + 2 replan for concurrent dual-track)
 
 Plans:
 
 - [x] 01.4-01-PLAN.md — Data model update + About section components (narrative, stats, composition)
 - [x] 01.4-02-PLAN.md — Experience timeline (entry component, timeline container, date formatting)
 - [x] 01.4-03-PLAN.md — Page integration (wire About and Experience sections into page.tsx)
+- [ ] 01.4-04-PLAN.md — Concurrent role data model + hideLine prop (track, groupId, Research Assistant entry)
+- [ ] 01.4-05-PLAN.md — DualTrackGroup component + timeline grouping integration
 
 ### Phase 1.5: Research Projects
 
-**Plans:** 3 plans
+**Plans:** 3/3 plans complete
 
 Plans:
-- [ ] 01.5-01-PLAN.md — Data model (Zod schema + typed projects) + Badge CVA extension (status colors)
-- [ ] 01.5-02-PLAN.md — Core components: PaperLinkChip, FilterTabs, ResearchCard
-- [ ] 01.5-03-PLAN.md — ResearchGrid composition (Suspense, crossfade, empty state) + page.tsx integration
+
+- [x] 01.5-01-PLAN.md — Data model (Zod schema + typed projects) + Badge CVA extension (status colors)
+- [x] 01.5-02-PLAN.md — Core components: PaperLinkChip, FilterTabs, ResearchCard
+- [x] 01.5-03-PLAN.md — ResearchGrid composition (Suspense, crossfade, empty state) + page.tsx integration
 
 ### Phase 1.6: Skills & Contact
 
