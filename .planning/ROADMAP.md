@@ -47,11 +47,12 @@ Plans:
 
 ### Phase 1.5: Research Projects
 
-- [ ] Research project card component
-- [ ] Status badges (in-progress / submitted / published / accepted)
-- [ ] Grid layout with filter by status
-- [ ] Data structure for research entries (abstract, status, tags, links)
-- [ ] Link to paper/PDF placeholder
+**Plans:** 3 plans
+
+Plans:
+- [ ] 01.5-01-PLAN.md — Data model (Zod schema + typed projects) + Badge CVA extension (status colors)
+- [ ] 01.5-02-PLAN.md — Core components: PaperLinkChip, FilterTabs, ResearchCard
+- [ ] 01.5-03-PLAN.md — ResearchGrid composition (Suspense, crossfade, empty state) + page.tsx integration
 
 ### Phase 1.6: Skills & Contact
 
