@@ -44,8 +44,8 @@ Plans:
 - [x] 01.4-01-PLAN.md — Data model update + About section components (narrative, stats, composition)
 - [x] 01.4-02-PLAN.md — Experience timeline (entry component, timeline container, date formatting)
 - [x] 01.4-03-PLAN.md — Page integration (wire About and Experience sections into page.tsx)
-- [ ] 01.4-04-PLAN.md — Concurrent role data model + hideLine prop (track, groupId, Research Assistant entry)
-- [ ] 01.4-05-PLAN.md — DualTrackGroup component + timeline grouping integration
+- [x] 01.4-04-PLAN.md — Concurrent role data model + hideLine prop (track, groupId, Research Assistant entry)
+- [x] 01.4-05-PLAN.md — DualTrackGroup component + timeline grouping integration
 
 ### Phase 1.5: Research Projects
 
