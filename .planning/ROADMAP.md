@@ -59,10 +59,12 @@ Plans:
 
 ### Phase 1.6: Skills & Contact
 
-- [ ] Skills section with categorized tech tags
-- [ ] Contact form component (using Formspree or Netlify Forms)
-- [ ] Social links row (GitHub, LinkedIn, Google Scholar, Email)
-- [ ] International format for form validation
+**Plans:** 3 plans
+
+Plans:
+- [ ] 01.6-01-PLAN.md — Foundation: skills data model, project slugs, badge variants, useClickOutside, Formspree install
+- [ ] 01.6-02-PLAN.md — Skills UI: accordion categories, per-category colors, custom popover for skill→project linking
+- [ ] 01.6-03-PLAN.md — Contact UI + Integration: Formspree form, social links, split layout, page.tsx wiring
 
 ### Phase 1.7: Polish & Deploy
 
