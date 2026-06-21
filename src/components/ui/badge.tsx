@@ -20,6 +20,16 @@ const badgeVariants = cva(
           "hover:bg-muted hover:text-muted-foreground dark:hover:bg-muted/50",
         link: "text-primary underline-offset-4 hover:underline",
       },
+      statusColor: {
+        "in-progress":
+          "bg-[oklch(0.72_0.15_72/0.15)] text-[oklch(0.72_0.15_72)] dark:bg-[oklch(0.72_0.12_72/0.2)] dark:text-[oklch(0.72_0.12_72)]",
+        submitted:
+          "bg-[oklch(0.55_0.14_250/0.15)] text-[oklch(0.55_0.14_250)] dark:bg-[oklch(0.6_0.12_250/0.2)] dark:text-[oklch(0.6_0.12_250)]",
+        published:
+          "bg-[oklch(0.58_0.17_145/0.15)] text-[oklch(0.58_0.17_145)] dark:bg-[oklch(0.62_0.14_145/0.2)] dark:text-[oklch(0.62_0.14_145)]",
+        accepted:
+          "bg-[oklch(0.52_0.16_290/0.15)] text-[oklch(0.52_0.16_290)] dark:bg-[oklch(0.58_0.14_290/0.2)] dark:text-[oklch(0.58_0.14_290)]",
+      },
     },
     defaultVariants: {
       variant: "default",
@@ -30,6 +40,7 @@ const badgeVariants = cva(
 function Badge({
   className,
   variant = "default",
+  statusColor,
   render,
   ...props
 }: useRender.ComponentProps<"span"> & VariantProps<typeof badgeVariants>) {
@@ -37,7 +48,7 @@ function Badge({
     defaultTagName: "span",
     props: mergeProps<"span">(
       {
-        className: cn(badgeVariants({ variant }), className),
+        className: cn(badgeVariants({ variant, statusColor }), className),
       },
       props
     ),
