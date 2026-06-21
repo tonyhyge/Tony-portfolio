@@ -2,6 +2,7 @@ import { Hero } from "@/components/hero/Hero";
 import { Section } from "@/components/section";
 import { AboutContent } from "@/components/about/about-content";
 import { ExperienceTimeline } from "@/components/experience/experience-timeline";
+import { ResearchGrid } from "@/components/research/ResearchGrid";
 
 export default function Home() {
   return (
@@ -14,6 +15,14 @@ export default function Home() {
 
       <Section id="experience" title="Experience">
         <ExperienceTimeline />
+      </Section>
+
+      <Section
+        id="research"
+        title="Research"
+        subtitle="Published & ongoing work in AI and ML"
+      >
+        <ResearchGrid />
       </Section>
 
       <section
