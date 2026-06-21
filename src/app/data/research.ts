@@ -25,6 +25,7 @@ export const ResearchProjectSchema = z.object({
   collaborators: z.array(z.string()).optional(),
   featured: z.boolean().default(false),
   thumbnail: z.string().optional(),
+  slug: z.string().optional(),
 })
 
 export type ResearchProject = z.infer<typeof ResearchProjectSchema>
@@ -112,9 +113,21 @@ const projectData = [
   },
 ]
 
-export const researchProjects: ResearchProject[] = projectData.map((p) =>
-  ResearchProjectSchema.parse(p),
-)
+/**
+ * Derive a URL-safe slug from a title string.
+ * Lowercases, replaces non-alphanumeric runs with hyphens, trims edge hyphens.
+ */
+function deriveSlug(title: string): string {
+  return title.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "")
+}
+
+export const researchProjects: ResearchProject[] = projectData.map((p) => {
+  const parsed = ResearchProjectSchema.parse(p)
+  return {
+    ...parsed,
+    slug: parsed.slug ?? deriveSlug(parsed.title),
+  }
+})
 
 export function getAvailableStatuses(): string[] {
   const statuses = new Set(researchProjects.map((p) => p.status))

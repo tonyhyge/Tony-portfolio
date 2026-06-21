@@ -30,6 +30,13 @@ const badgeVariants = cva(
         accepted:
           "bg-[oklch(0.52_0.16_290/0.15)] text-[oklch(0.52_0.16_290)] dark:bg-[oklch(0.58_0.14_290/0.2)] dark:text-[oklch(0.58_0.14_290)]",
       },
+      skillColor: {
+        cyan: "bg-[oklch(0.78_0.12_200/0.12)] text-[oklch(0.55_0.15_200)] dark:bg-[oklch(0.78_0.12_200/0.18)] dark:text-[oklch(0.72_0.14_200)]",
+        violet:
+          "bg-[oklch(0.82_0.12_290/0.12)] text-[oklch(0.55_0.18_290)] dark:bg-[oklch(0.82_0.12_290/0.18)] dark:text-[oklch(0.68_0.16_290)]",
+        amber:
+          "bg-[oklch(0.85_0.14_80/0.12)] text-[oklch(0.65_0.18_80)] dark:bg-[oklch(0.85_0.14_80/0.18)] dark:text-[oklch(0.78_0.16_80)]",
+      },
     },
     defaultVariants: {
       variant: "default",
@@ -41,6 +48,7 @@ function Badge({
   className,
   variant = "default",
   statusColor,
+  skillColor,
   render,
   ...props
 }: useRender.ComponentProps<"span"> & VariantProps<typeof badgeVariants>) {
@@ -48,7 +56,10 @@ function Badge({
     defaultTagName: "span",
     props: mergeProps<"span">(
       {
-        className: cn(badgeVariants({ variant, statusColor }), className),
+        className: cn(
+          badgeVariants({ variant, statusColor, skillColor }),
+          className
+        ),
       },
       props
     ),
