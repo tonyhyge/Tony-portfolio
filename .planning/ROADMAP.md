@@ -73,15 +73,18 @@ Plans:
 
 ### Phase 1.7: Polish & Deploy
 
-**Plans:** 6 plans
+**Plans:** 6/6 plans complete
 
 Plans:
-- [ ] 01.7-01-PLAN.md — Install test dependencies + create Vitest/Playwright/Lighthouse CI configs
-- [ ] 01.7-02-PLAN.md — Custom 404 page, AI-crawler robots.txt, dynamic sitemap
-- [ ] 01.7-03-PLAN.md — Unit tests (cn()) + component tests (Button, Badge) + fixtures
-- [ ] 01.7-04-PLAN.md — E2E tests (nav, sections, dark mode, 404) + responsive screenshots + a11y audit
-- [ ] 01.7-05-PLAN.md — CI pipeline: test gate + audit gate (Lighthouse >= 90, a11y)
-- [ ] 01.7-06-PLAN.md — First production deploy + Formspree pre-flight verification
+
+- [x] 01.7-01-PLAN.md — Install test dependencies + create Vitest/Playwright/Lighthouse CI configs
+- [x] 01.7-02-PLAN.md — Custom 404 page, AI-crawler robots.txt, dynamic sitemap
+- [x] 01.7-03-PLAN.md — Unit tests (cn()) + component tests (Button, Badge) + fixtures
+- [x] 01.7-04-PLAN.md — E2E tests (nav, sections, dark mode, 404) + responsive screenshots + a11y audit
+- [x] 01.7-05-PLAN.md — CI pipeline: test gate + audit gate (Lighthouse >= 90, a11y)
+- [x] 01.7-06-PLAN.md — First production deploy + Formspree pre-flight verification
+
+**Status:** ✅ Complete (2026-06-22) — Site live at https://tonyhyge.github.io/Tony-portfolio
 
 ---
 

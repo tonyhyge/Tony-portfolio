@@ -2,22 +2,22 @@
 gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
-current_phase: 01.7
+current_phase: 2.1 — Blog Infrastructure
 status: Ready to plan
-stopped_at: context exhaustion at 76% (2026-06-21)
-last_updated: "2026-06-22T08:20:17.300Z"
+stopped_at: null
+last_updated: "2026-06-22T16:00:00.000Z"
 last_activity: 2026-06-22
 progress:
   total_phases: 16
-  completed_phases: 4
-  total_plans: 21
-  completed_plans: 20
-  percent: 25
+  completed_phases: 5
+  total_plans: 27
+  completed_plans: 26
+  percent: 31
 ---
 
 # Project State
 
-**Current Phase:** 01.7
+**Current Phase:** 2.1 — Blog Infrastructure
 **Last Activity:** 2026-06-22
 **Last Updated:** 2026-06-19
 
@@ -43,10 +43,7 @@ Milestone 1: mvp-portfolio — Build core portfolio shell with all sections
 - [x] Phase 1.4: About & Experience — 5 plans, dual-track timeline, narrative
 - [x] Phase 1.5: Research Projects — 3 plans, Research grid, filter tabs, badge variants
 - [x] Phase 1.6: Skills & Contact — 3 plans, Skills accordion, Contact form, Formspree integration
-
-## In Progress
-
-- [ ] Phase 1.7: Polish & Deploy — 6 plans (testing infra, 404/robots/sitemap, tests, CI gates, deploy)
+- [x] Phase 1.7: Polish & Deploy — 6 plans (testing infra, 404/robots/sitemap, tests, CI gates, deploy)
 
 ### Ready for Planning
 
@@ -63,6 +60,5 @@ Milestone 1: mvp-portfolio — Build core portfolio shell with all sections
 
 ## Session
 
-**Last session:** 2026-06-21T12:12:37.135Z
-**Stopped at:** context exhaustion at 76% (2026-06-21)
-**Resume file:** .planning/phases/01.7-polish-deploy/01.7-UI-SPEC.md
+**Last session:** 2026-06-22T16:00:00.000Z
+**Completed:** Phase 1.7 — Polish & Deploy (6/6 plans, site live at tonyhyge.github.io/Tony-portfolio)
