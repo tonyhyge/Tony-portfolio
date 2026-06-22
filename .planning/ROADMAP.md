@@ -94,11 +94,13 @@ Plans:
 
 ### Phase 2.1: Blog Infrastructure
 
-- [ ] MDX integration (next-mdx-remote)
-- [ ] Blog post data schema (frontmatter: title, date, tags, excerpt, cover)
-- [ ] Blog directory structure (/content/blog/*.mdx)
-- [ ] Syntax highlighting for code blocks
-- [ ] Reading time estimation
+**Plans:** 4 plans
+
+Plans:
+- [ ] 02.1-01-PLAN.md — Install dependencies + sample blog post fixture
+- [ ] 02.1-02-PLAN.md — BlogPostSchema, data loaders, utility functions
+- [ ] 02.1-03-PLAN.md — Dynamic route /blog/[slug] + MDX render + syntax highlighting
+- [ ] 02.1-04-PLAN.md — Unit tests for schema and utilities
 
 ### Phase 2.2: Blog UI
 
