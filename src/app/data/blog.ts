@@ -19,7 +19,7 @@ export const BlogPostSchema = z.object({
 
 export type BlogPost = z.infer<typeof BlogPostSchema>
 
-export type BlogPostMeta = BlogPost & { slug: string; readingTime: number }
+export type BlogPostMeta = BlogPost & { slug: string; readingTime: number; content: string }
 
 // ── Directory ───────────────────────────────────────────────────────────
 
@@ -39,7 +39,7 @@ export function getPostBySlug(slug: string): BlogPostMeta {
   const parsed = BlogPostSchema.parse(data)
   const wordCount = content.split(/\s+/g).filter(Boolean).length
   const readingTime = Math.ceil(wordCount / 200)
-  return { ...parsed, slug, readingTime }
+  return { ...parsed, slug, readingTime, content }
 }
 
 export function getAllPosts(): BlogPostMeta[] {
