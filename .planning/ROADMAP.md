@@ -94,10 +94,11 @@ Plans:
 
 ### Phase 2.1: Blog Infrastructure
 
-**Plans:** 4 plans
+**Plans:** 1/4 plans executed
 
 Plans:
-- [ ] 02.1-01-PLAN.md — Install dependencies + sample blog post fixture
+
+- [x] 02.1-01-PLAN.md — Install dependencies + sample blog post fixture
 - [ ] 02.1-02-PLAN.md — BlogPostSchema, data loaders, utility functions
 - [ ] 02.1-03-PLAN.md — Dynamic route /blog/[slug] + MDX render + syntax highlighting
 - [ ] 02.1-04-PLAN.md — Unit tests for schema and utilities
