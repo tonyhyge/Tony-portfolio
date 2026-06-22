@@ -4,14 +4,14 @@ milestone: v1.0
 milestone_name: milestone
 current_phase: 2.1 — Blog Infrastructure
 status: Ready to plan
-stopped_at: null
-last_updated: "2026-06-22T16:00:00.000Z"
+stopped_at: Phase 2.1 context gathered
+last_updated: "2026-06-22T10:02:03.143Z"
 last_activity: 2026-06-22
 progress:
   total_phases: 16
   completed_phases: 5
-  total_plans: 27
-  completed_plans: 26
+  total_plans: 21
+  completed_plans: 21
   percent: 31
 ---
 
@@ -60,5 +60,6 @@ Milestone 1: mvp-portfolio — Build core portfolio shell with all sections
 
 ## Session
 
-**Last session:** 2026-06-22T16:00:00.000Z
-**Completed:** Phase 1.7 — Polish & Deploy (6/6 plans, site live at tonyhyge.github.io/Tony-portfolio)
+**Last session:** 2026-06-22T10:02:03.137Z
+**Stopped at:** Phase 2.1 context gathered
+**Resume file:** .planning/phases/02.1-blog-infrastructure/02.1-CONTEXT.md
