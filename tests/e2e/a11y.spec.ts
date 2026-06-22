@@ -29,4 +29,21 @@ test.describe("Accessibility (WCAG AA)", () => {
       .analyze();
     expect(results.violations).toEqual([]);
   });
+
+  test("skip-to-content link is accessible via keyboard", async ({ page }) => {
+    await page.goto("/Tony-portfolio/");
+    await page.waitForLoadState("networkidle");
+
+    // Skip link is hidden initially (sr-only)
+    const skipLink = page.locator("a:has-text('Skip to content')");
+    await expect(skipLink).not.toBeVisible();
+
+    // Tab into the page to focus the skip link
+    await page.keyboard.press("Tab");
+    await expect(skipLink).toBeVisible();
+
+    // Activate it and verify focus moves to main content
+    await skipLink.click();
+    await expect(page.locator("#main-content")).toBeFocused();
+  });
 });
