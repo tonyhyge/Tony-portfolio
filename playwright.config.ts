@@ -23,7 +23,7 @@ export default defineConfig({
   webServer: {
     command: "node tests/serve-out.mjs",
     url: BASE_URL,
-    reuseExistingServer: !process.env.CI,
+    reuseExistingServer: true,
     timeout: 30_000,
   },
 });
