@@ -1,0 +1,37 @@
+---
+title: "Hello World — My First Blog Post"
+date: "2026-06-22"
+tags: ["introduction", "blog"]
+excerpt: "Welcome to my blog! This is the first post on my new portfolio blog."
+cover: "/images/blog/hello-world.jpg"
+draft: false
+updated: "2026-06-22"
+series: "Getting Started"
+canonical: "https://tonyhyge.github.io/Tony-portfolio/blog/hello-world"
+---
+
+## Welcome to the Blog
+
+This is my very first blog post on the new portfolio site. I have been meaning to start a blog for a while, and I am excited to finally have a place to share thoughts on software engineering, design patterns, and the various side projects I tinker with in my spare time. Building this site from scratch with Next.js has been a rewarding experience — the static export model keeps things _fast_ and **simple**, and the MDX-based content pipeline makes it easy to write and publish new posts without fighting with a CMS.
+
+One thing I love about modern frontend tooling is how straightforward it is to add syntax highlighting. Take a look at this TypeScript snippet:
+
+```typescript
+interface BlogPost {
+  slug: string;
+  title: string;
+  date: string;
+  tags: string[];
+  excerpt: string;
+  draft: boolean;
+}
+
+function formatReadingTime(wordCount: number): string {
+  const minutes = Math.ceil(wordCount / 200);
+  return `${minutes} min read`;
+}
+```
+
+The `formatReadingTime` function above uses a simple word-count heuristic — divide by 200 words per minute and round up. It is not going to win any awards for accuracy, but it gives readers a rough idea of how long a post will take to digest. Over time I plan to refine this with adjustments for code blocks and images, but for now this baseline works well enough.
+
+I have lined up a few topics for upcoming posts: setting up GitHub Actions for static site deployment, writing accessible React components, and a deep dive into the state management patterns I used on a recent project. If any of that sounds interesting, subscribe via RSS (coming soon) or just check back here every so often. Thanks for stopping by.
