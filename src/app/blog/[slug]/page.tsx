@@ -2,10 +2,13 @@ import { notFound } from "next/navigation"
 import { MDXRemote } from "next-mdx-remote/rsc"
 import rehypePrettyCode from "rehype-pretty-code"
 import rehypeSlug from "rehype-slug"
-import { getAllSlugs, getPostBySlug } from "@/app/data/blog"
+import { getAllPosts, getAllSlugs, getPostBySlug } from "@/app/data/blog"
 import { formatPostDate } from "@/lib/blog"
 import { Breadcrumb } from "@/components/blog/breadcrumb"
 import { Toc } from "@/components/blog/toc"
+import { SeriesNav } from "@/components/blog/series-nav"
+import { ShareButtons } from "@/components/blog/share-buttons"
+import { PrevNextNav } from "@/components/blog/prev-next-nav"
 import Link from "next/link"
 
 export async function generateStaticParams(): Promise<{ slug: string }[]> {
@@ -24,6 +27,8 @@ export default async function Page({ params }: PageProps) {
   if (!post) {
     notFound()
   }
+
+  const allPosts = getAllPosts()
 
   return (
     <article lang="en" className="mx-auto max-w-screen-xl px-4 py-12">
@@ -84,6 +89,8 @@ export default async function Page({ params }: PageProps) {
       {/* Mobile TOC */}
       <Toc headings={post.headings} className="mb-6" />
 
+      <SeriesNav post={post} allPosts={allPosts} position="top" />
+
       {/* Two-column layout: article + desktop TOC */}
       <div className="flex flex-col gap-8 lg:flex-row lg:gap-12">
         <div className="max-w-[720px] flex-1">
@@ -115,6 +122,14 @@ export default async function Page({ params }: PageProps) {
         {/* Desktop TOC sidebar */}
         <Toc headings={post.headings} />
       </div>
+
+      <SeriesNav post={post} allPosts={allPosts} position="bottom" />
+
+      <div className="mt-6 border-t pt-6">
+        <ShareButtons title={post.title} url={post.canonical ?? `/blog/${post.slug}`} />
+      </div>
+
+      <PrevNextNav post={post} allPosts={allPosts} />
     </article>
   )
 }
