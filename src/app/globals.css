@@ -145,4 +145,7 @@
     @apply font-sans;
     scroll-behavior: auto;
   }
+  h2, h3 {
+    scroll-margin-top: 96px;
+  }
 }
