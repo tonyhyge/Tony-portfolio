@@ -1,8 +1,11 @@
 import { notFound } from "next/navigation"
 import { MDXRemote } from "next-mdx-remote/rsc"
 import rehypePrettyCode from "rehype-pretty-code"
-import { getAllSlugs, getPostBySlug } from "@/app/data/blog"
+import { getAllPosts, getAllSlugs, getPostBySlug } from "@/app/data/blog"
 import { formatPostDate } from "@/lib/blog"
+import { SeriesNav } from "@/components/blog/series-nav"
+import { ShareButtons } from "@/components/blog/share-buttons"
+import { PrevNextNav } from "@/components/blog/prev-next-nav"
 
 export async function generateStaticParams(): Promise<{ slug: string }[]> {
   const slugs = getAllSlugs()
@@ -20,6 +23,8 @@ export default async function Page({ params }: PageProps) {
   if (!post) {
     notFound()
   }
+
+  const allPosts = getAllPosts()
 
   return (
     <article lang="en" className="mx-auto max-w-3xl px-4 py-12">
@@ -42,6 +47,9 @@ export default async function Page({ params }: PageProps) {
           </div>
         )}
       </header>
+
+      <SeriesNav post={post} allPosts={allPosts} position="top" />
+
       <div className="prose prose-neutral dark:prose-invert max-w-none">
         <MDXRemote
           source={post.content}
@@ -64,6 +72,14 @@ export default async function Page({ params }: PageProps) {
           }}
         />
       </div>
+
+      <SeriesNav post={post} allPosts={allPosts} position="bottom" />
+
+      <div className="mt-6 border-t pt-6">
+        <ShareButtons title={post.title} url={post.canonical ?? `/blog/${post.slug}`} />
+      </div>
+
+      <PrevNextNav post={post} allPosts={allPosts} />
     </article>
   )
 }
