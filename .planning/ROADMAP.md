@@ -105,13 +105,13 @@ Plans:
 
 ### Phase 2.2: Blog UI
 
-**Plans:** 2/3 plans executed
+**Plans:** 3/3 plans complete
 
 Plans:
 
 - [x] 02.2-01-PLAN.md — Blog list page: hero card, grid cards, tag filter, URL param filtering
 - [x] 02.2-02-PLAN.md — Post page enhancement: breadcrumb, cover image, adaptive TOC, server-side heading extraction
-- [ ] 02.2-03-PLAN.md — Post page polish: series nav, share buttons, prev/next nav, tag route pages
+- [x] 02.2-03-PLAN.md — Post page polish: series nav, share buttons, prev/next nav, tag route pages
 
 ### Phase 2.3: Blog Features
 
